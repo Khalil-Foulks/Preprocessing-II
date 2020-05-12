@@ -187,7 +187,10 @@ header .nav-title .navigation nav a {
   font-size: 1.6rem;
   padding-bottom: 10px;
   text-decoration: none;
-  color: black;
+  color: #212529;
+}
+header .nav-title .navigation nav a:hover {
+  color: #1fc8e3;
 }
 .footer {
   width: 100%;
@@ -246,15 +249,55 @@ header .nav-title .navigation nav a {
   display: flex;
   justify-content: space-between;
 }
+@media ( max-width: 500px )  {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid blueviolet;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media ( max-width: 500px )  {
+  .home .content-pick .destination {
+    border: 1px solid blue;
+    width: 100%;
+    text-align: center;
+  }
+}
 .home .content-pick .destination .btn button {
-  background-color: #008080;
+  background-color: #17A2B8;
   border-color: none;
   text-decoration: none;
   color: white;
-  border-radius: 10px;
-  padding: 10px 50px;
+  border-radius: 1rem;
+  padding: 1rem 5rem;
+}
+.home .content-pick .destination .btn button:hover {
+  background-color: #1fc8e3;
+}
+@media ( max-width: 500px )  {
+  .home .content-pick .destination .btn button {
+    padding: 1rem 3rem;
+  }
+}
+@media ( max-width: 500px )  {
+  .home .content-pick .destination .btn button {
+    background-color: #17A2B8;
+    border-color: none;
+    text-decoration: none;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem 5rem;
+  }
+  .home .content-pick .destination .btn button:hover {
+    background-color: #1fc8e3;
+  }
+}
+@media ( max-width: 500px )  and ( max-width: 500px )  {
+  .home .content-pick .destination .btn button {
+    padding: 1.5rem 15rem;
+  }
 }

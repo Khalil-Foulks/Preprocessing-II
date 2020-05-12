@@ -1,26 +1,37 @@
 // Navigation Styles here
 
-header{
-    .nav-title{
+header {
+    .nav-title {
         display: flex;
         align-items: baseline;
         justify-content: space-between;
         margin: 2rem 0 0 0;
         border-bottom: 2px dashed @navigation-border;
-        .navigation{
-            width:300px;
-            nav{
+
+        .navigation {
+            width: 300px;
+
+            nav {
                 display: flex;
                 justify-content: space-around;
-                a{
+
+                a {
                     line-height: 1.5;
                     font-size: 1.6rem;
                     padding-bottom: 10px;
                     text-decoration: none;
-                    color: black;
-                    
-                }
-            }
-        }
-    }//closes nav-title container
-}//closes header
+                    color: @shark;
+
+                    &:hover {
+                        color: lighten(@eastern-blue, 10%);
+                    }//closes hover
+                }//closes a tag
+
+            }//closes nav
+        }//closes .navigation
+    }//closes nav-title
+
+    //closes nav-title container
+}
+
+//closes header
