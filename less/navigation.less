@@ -1,7 +1,7 @@
 // Navigation Styles here
 
 header {
-    
+
     .nav-title {
         display: flex;
         align-items: baseline;
@@ -13,23 +13,32 @@ header {
             flex-direction: column;
             align-items: stretch;
             width: 100%;
-          }//closes media
+        }
 
-        .title{
-            h1{
-              @media @mobile {
-                font-size: 3.2rem;
-                margin: 0 0 1% 0;
-                text-align: center;
-              }//closes media
+        //closes media
+
+        .title {
+            h1 {
+                @media @mobile {
+                    font-size: 3.2rem;
+                    margin: 0 0 1% 0;
+                    text-align: center;
+                }
+
+                //closes media
             }
-          }//closes .title
+        }
+
+        //closes .title
 
         .navigation {
             width: 30rem;
+
             @media @mobile {
                 width: 100%;
-              }//closes media
+            }
+
+            //closes media
 
             nav {
                 display: flex;
@@ -44,36 +53,48 @@ header {
 
                     &:hover {
                         color: lighten(@eastern-blue, 10%);
-                    }//closes hover
-                }//closes a tag
-            
-            }//closes nav
-        }//closes .navigation
-        
+                    }
+
+                    //closes hover
+                }
+
+                //closes a tag
+
+            }
+
+            //closes nav
+        }
+
+        //closes .navigation
+
     }
 
     //closes nav-title container
 
     .img-content {
         padding: @padding-lr;
-        @media @mobile{
+
+        @media @mobile {
             width: 90%;
             margin: 0 5% 5%;
             padding: @padding-lr-phone;
         }
 
         img {
-          margin: 0 0 2rem 0;
+            margin: 0 0 2rem 0;
 
-          @media @mobile{
-            margin: 0;
+            @media @mobile {
+                margin: 0;
+            }
         }
-        }
-    }//closes .img-content
+    }
 
-    .text-content{
+    //closes .img-content
+
+    .text-content {
         padding: @padding-lr;
-        @media @mobile{
+
+        @media @mobile {
             width: 90%;
             margin: 5%;
             padding: @padding-lr-phone;
