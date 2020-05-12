@@ -5,11 +5,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: @padding-lr;
 
     @media @phone {
       flex-direction: column;
       align-content: center;
       margin: 5%;
+      padding: @padding-lr-phone;
     }
 
     .text-content {
@@ -77,8 +79,18 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone {
+      width: 100%;
+      margin: 5%;
+      padding: @padding-lr-phone;
+    }//closes media
+
     img {
       border-radius: 10px;
+
+      @media @phone {
+        width: 90%;
+      }//closes media
     }
   }
 
@@ -91,6 +103,7 @@
     @media @phone {
       flex-direction: column;
       align-items: center;
+      
     }
 
     .destination {
@@ -108,7 +121,7 @@
         .button(@eastern-blue);
 
         @media @phone {
-          .button(@eastern-blue, 1.5rem 15rem)
+          .button(@eastern-blue, 1rem 15rem, 1.7rem);
         }
       }
 
