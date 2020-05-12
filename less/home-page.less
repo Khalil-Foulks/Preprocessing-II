@@ -65,19 +65,22 @@
     @media @phone {
       flex-direction: column;
       align-items: center;
-      border: 1px solid blueviolet;
     }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
       @media @phone {
-        border: 1px solid blue;
-        width: 100%;
-        text-align: center;
+      width: 100%;
+      margin: 1rem 0;
+      padding: 0 5rem;
+ 
       }
+
       .btn{
         .button(@eastern-blue);
+
         @media @phone {
           .button(@eastern-blue,1.5rem 15rem)
         }

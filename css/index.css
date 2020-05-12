@@ -253,7 +253,6 @@ header .nav-title .navigation nav a:hover {
   .home .content-pick {
     flex-direction: column;
     align-items: center;
-    border: 1px solid blueviolet;
   }
 }
 .home .content-pick .destination {
@@ -262,9 +261,9 @@ header .nav-title .navigation nav a:hover {
 }
 @media ( max-width: 500px )  {
   .home .content-pick .destination {
-    border: 1px solid blue;
     width: 100%;
-    text-align: center;
+    margin: 1rem 0;
+    padding: 0 5rem;
   }
 }
 .home .content-pick .destination .btn button {
