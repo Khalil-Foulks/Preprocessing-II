@@ -8,8 +8,27 @@ header {
         margin: 2rem 0 0 0;
         border-bottom: 2px dashed @navigation-border;
 
+        @media @phone {
+            flex-direction: column;
+            align-items: stretch;
+            width: 100%;
+          }//closes media
+
+        .title{
+            h1{
+              @media @phone {
+                font-size: 3.2rem;
+                margin: 0 0 1% 0;
+                text-align: center;
+              }//closes media
+            }
+          }//closes .title
+
         .navigation {
             width: 300px;
+            @media @phone {
+                width: 100%;
+              }//closes media
 
             nav {
                 display: flex;
@@ -26,12 +45,32 @@ header {
                         color: lighten(@eastern-blue, 10%);
                     }//closes hover
                 }//closes a tag
-
+            
             }//closes nav
         }//closes .navigation
-    }//closes nav-title
+        
+    }
 
     //closes nav-title container
+
+    .img-content {
+        @media @phone{
+            width: 90%;
+            margin: 0 5% 5%;
+        }
+
+        img {
+          margin: 0 0 2rem 0;
+        }
+    }//closes .img-content
+
+    .text-content{
+        @media @phone{
+            width: 90%;
+            margin: 5%;
+        }
+
+    }
 }
 
 //closes header

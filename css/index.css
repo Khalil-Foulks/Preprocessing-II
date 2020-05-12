@@ -175,8 +175,27 @@ header .nav-title {
   margin: 2rem 0 0 0;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media ( max-width: 500px )  {
+  header .nav-title {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+}
+@media ( max-width: 500px )  {
+  header .nav-title .title h1 {
+    font-size: 3.2rem;
+    margin: 0 0 1% 0;
+    text-align: center;
+  }
+}
 header .nav-title .navigation {
   width: 300px;
+}
+@media ( max-width: 500px )  {
+  header .nav-title .navigation {
+    width: 100%;
+  }
 }
 header .nav-title .navigation nav {
   display: flex;
@@ -192,6 +211,21 @@ header .nav-title .navigation nav a {
 header .nav-title .navigation nav a:hover {
   color: #1fc8e3;
 }
+@media ( max-width: 500px )  {
+  header .img-content {
+    width: 90%;
+    margin: 0 5% 5%;
+  }
+}
+header .img-content img {
+  margin: 0 0 2rem 0;
+}
+@media ( max-width: 500px )  {
+  header .text-content {
+    width: 90%;
+    margin: 5%;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -203,30 +237,54 @@ header .nav-title .navigation nav a:hover {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home header .img-content img {
-  margin: 0 0 2rem 0;
-  border-radius: 10px;
-}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media ( max-width: 500px )  {
+  .home .content-section {
+    flex-direction: column;
+    align-content: center;
+    margin: 5%;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media ( max-width: 500px )  {
+  .home .content-section .text-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media ( max-width: 500px )  {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media ( max-width: 500px )  {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media ( max-width: 500px )  {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+    align-content: center;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
