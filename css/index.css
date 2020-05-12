@@ -172,7 +172,8 @@ header .nav-title {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
+  border-bottom: 2px dashed #C0C0C0;
 }
 header .nav-title .navigation {
   width: 300px;
